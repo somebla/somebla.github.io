@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'aileron';
+    src: url('../font/Aileron-Light.ttf') format('truetype');
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    font-family: aileron;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.button {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    height: 2.5rem;
+    padding-top: 1.3rem;
+    width: 15rem;
+    text-align: center;
+    color: rgb(214, 206, 204);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    transform: translateX(-50%);
+}
+
+.split.left .button {
+    background-color: rgba(137, 50, 36, 0.7);
+    border: none;
+}
+
+.split.left .button:hover {
+    background-color: rgb(137, 50, 36);
+    border: none;
+}
+
+.split.right .button {
+    background-color: rgba(191, 63, 39, 0.7);
+    border: none;
+}
+
+.split.right .button:hover {
+    background-color: rgb(191, 63, 39);
+    border: none;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../img/anim.gif') center center no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.container img {
+    height: 10%;
+    position: relative;
+    top: 5%;
+    left: 8%;
+}
+
+.split {
+
+    position: absolute;
+    top: 20%;
+    width: 50%;
+    height: 60%;
+    overflow: hidden;
+}
+
+.split.left {
+    left: 0;
+    background-color: rgba(137, 50, 36, 0.4);
+
+}
+
+.split.right {
+    right: 0;
+    background-color: rgba(191, 63, 39, 0.4);
+}
